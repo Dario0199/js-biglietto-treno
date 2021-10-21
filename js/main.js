@@ -17,13 +17,13 @@ let totalPrice;
 
 if(age < 18){
     // console.log('minorenne')
-    totalPrice = price - ((price / 100)* 20)
+    totalPrice = price - ((price / 100)* 20);
 } else if (age > 65){
     // console.log('over 65')
-    totalPrice = price - ((price / 100)* 40)
+    totalPrice = price - ((price / 100)* 40);
 } else {
     // console.log('normal')
-    totalPrice = price
+    totalPrice = price;
 }
 
-document.getElementById('ticketPrice').innerHTML = totalPrice;
+document.getElementById('ticketPrice').innerHTML = 'Il prezzo del tuo biglietto è: ' + totalPrice.toFixed(2) + '€';
