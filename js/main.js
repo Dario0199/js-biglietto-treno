@@ -14,6 +14,7 @@ console.log(price)
 //prezzo totale
 let totalPrice;
 
+
 if(age < 18){
     // console.log('minorenne')
     totalPrice = price - ((price / 100)* 20)
